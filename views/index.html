@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>BMI Calculator</title>
+</head>
+<body>
+  <div class="box">
+    <form action="/calculate" method="POST">
+      <h1>BMI Calculator</h1>
+    
+      <div class="content">
+        <div class="input">
+          <label for="age">Age</label>
+          <input type="number" id="age" name="age" required min="1" max="120" placeholder="Enter your age" />
+        </div>
+    
+        <div class="gender">
+          <label class="container">
+            <input type="radio" name="radio" value="male" required />
+            <p class="text">Male</p>
+            <span class="checkmark"></span>
+          </label>
+    
+          <label class="container">
+            <input type="radio" name="radio" value="female" required />
+            <p class="text">Female</p>
+            <span class="checkmark"></span>
+          </label>
+        </div>
+    
+        <div class="containerHW">
+          <div class="inputH">
+            <label for="height">Height (cm)</label>
+            <input type="number" id="height" name="height" required min="1" max="500" placeholder="Enter your height" />
+          </div>
+    
+          <div class="inputW">
+            <label for="weight">Weight (kg)</label>
+            <input type="number" id="weight" name="weight" required min="1" max="500" placeholder="Enter your weight" />
+          </div>
+        </div>
+    
+        <button class="calculate" id="submit">Calculate BMI</button>
+      </div>
+    </form>
+  </div>
+</body> 
+</html>

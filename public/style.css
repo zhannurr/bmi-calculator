@@ -1,0 +1,129 @@
+body {
+  font-family: 'Montserrat';
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #a9e2ee;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.box {
+  padding: 0 50px 50px 50px;
+  margin-top: 70px;
+  width: 500px;
+  background: #fafafa;
+  border-radius: 15px;
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+h1 {
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+.input, .inputH, .inputW {
+  background: #fff;
+  box-shadow: 0 0 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.input input, .inputH input, .inputW input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #056578;
+  font-size: larger;
+  font-weight: 600;
+  width: 15%;
+}
+
+button.calculate {
+  color: #fff;
+  font-size: 18px;
+  background: #056578;
+  border-radius: 15px;
+  padding: 12px 0;
+  width: 300px;
+  outline: none;
+  border: none;
+}
+
+button.calculate:hover {
+  background: #318090;
+}
+
+
+
+
+
+.gender {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.gender .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gender .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 18px;
+  left: -5px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.gender .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.gender .container input:checked ~ .checkmark {
+  background-color: #056578;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.gender .container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.gender .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+
+
+
